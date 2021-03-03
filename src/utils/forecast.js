@@ -12,7 +12,7 @@ const forecast = (latitude, longitude, callback) => {
     } else {
       callback(
         undefined,
-        `The temperature is ${body.current.temperature} degrees of celsius and there is ${body.current.precip}% chance of raining`
+        `The temperature is ${body.current.temperature} degrees of celsius but it feels like ${body.current.feelslike}. \n There is ${body.current.precip}% chance of raining and the wind direction will be ${body.current.wind_dir}`
       );
     }
   });
